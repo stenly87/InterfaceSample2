@@ -39,5 +39,7 @@ class Program
             if (animal is ISwimAble swim)
                 swim.Swim();
         }
+
+        Console.ReadLine();
     }
 }
