@@ -19,7 +19,7 @@ namespace ConsoleApp2
         {
             var timer = async () => {
                 do {
-                    await Task.Delay(1000);
+                    await Task.Delay(200);
                     LifeAction?.Invoke();
                 }
                 while (IsAlive);

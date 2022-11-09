@@ -11,10 +11,12 @@ internal class Parrot : Animal, IFlyAble, IRunAble
     private void ParrotLifeAction()
     {
         Console.WriteLine($"{Name}: Кар, тьфу, привет"); ;
-        if (random.NextDouble() < 0.1)
+        if (random.NextDouble() < 0.025)
         {
             IsAlive = false;
+            Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine($"{Name} подавился и сдох");
+            Console.ForegroundColor = ConsoleColor.White;
         }
     }
     public void Fly()
